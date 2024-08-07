@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .background-original-slider,
+  .background-next-slider {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: right 1s ease;
+    z-index: -1;
+  }
+
+  .background-original-slider {
+    right: 0;
+  }
+
+  .background-next-slider {
+    right: -100%;
+  }
+
+  .background-original-slider.is-transition {
+    right: 100%;
+  }
+
+  .background-next-slider.is-transition {
+    right: 0;
+  }
+  
+  .background-original-slider.lavender,
+  .background-next-slider.lavender {
+    background-color: lavender;
+  }
+  
+  .background-original-slider.green,
+  .background-next-slider.green {
+    background-color: green;
+  }
+  
+  .background-original-slider.yellow,
+  .background-next-slider.yellow {
+    background-color: yellow;
+  }
+  
+
+  .content {
+    position: relative;
+    padding: 20px;
+  }
+  
